@@ -37,7 +37,7 @@ int main()
 		cout << "Числа успешно считаны" << endl;
 	}
 	else cout << "Ошибка открытия файла" << endl;
-
+	file.close();
 	cout << "Сумма чисел: " << sum << endl;
 	system("pause");
 	return 0;
