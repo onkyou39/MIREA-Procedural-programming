@@ -1,33 +1,37 @@
+//былая слава
 #include <iostream>
 #include <iomanip>
+
+using namespace std;
+
 int main()
 {
-	for (int i = 0; i < 13; ++i)
+	for (int i = 0; i < 13; i++)
 	{
 		if (i < 7) {
-			if (0 == i % 2) {
-				for (int j = 0; j<4; ++j)
+			if (i % 2 == 0) {
+				for (int j = 0; j<4; j++)
 				{
-					std::cout << "  *";
+					cout << "  *";
 				}
-				std::cout.width(60);
-				std::cout << std::setw(60) << std::setfill('/');
+				cout.width(60);
+				cout << std::setw(60) << setfill('/');
 			}
 			else {
-				std::cout << " ";
-				for (int j = 0; j < 4; ++j)
-					std::cout << "*  ";
+				cout << " ";
+				for (int j = 0; j < 4; j++)
+					cout << "*  ";
 			}
-			std::cout << '\n';
+			cout << '\n';
 		}
 
 	}
 
-	for (int i = 0; i<18; ++i)
-		if (0 == i % 2)
-			std::cout << std::setw(72) << std::setfill(' ') << '\n';
+	for (int i = 0; i < 18; i++)
+		if (i % 2 == 0)
+			cout << setw(72) << setfill(' ') << '\n';
 		else
-			std::cout << std::setw(72) << std::setfill('/') << '\n';
+			cout << setw(72) << setfill('/') << '\n';
 	system("pause");
 	return 0;
 }
