@@ -10,7 +10,7 @@ int main()
 	{
 		if (i < 7) {
 			if (i % 2 == 0) {
-				for (int j = 0; j<4; j++)
+				for (int j = 0; j < 4; j++)
 				{
 					cout << "  *";
 				}
