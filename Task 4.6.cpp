@@ -70,11 +70,6 @@ int main()
 		}
 	}
 
-	//for (int i = 0; i < rome_num_values.size(); i++)
-	//{
-	//    cout << rome_num_values[i] << endl;
-	//}
-
 	for (int i = 1; i < rome_num_values.size(); i++)
 	{
 		if (rome_num_values[i] > rome_num_values[i - 1])
@@ -90,5 +85,5 @@ int main()
 	sum += rome_num_values[rome_num_values.size() - 1];
 
 	cout << "Число в арабской записи:" << sum << "\n";
-
+	system("pause");
 }
